@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FABER — Diseño industrial</title>
+  <meta name="description" content="FABER: catálogo digital de proyectos de Diseño de Productos 2 y Materiales y Procesos 1.">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip" href="#app">Saltar al contenido</a>
+  <header class="topbar" id="topbar"></header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer" id="footer"></footer>
+
+  <div class="lb" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <div class="lb-bar">
+      <span class="lb-title" id="lbTitle"></span>
+      <div class="lb-tools">
+        <button type="button" data-lb="prev" aria-label="Anterior">‹</button>
+        <span class="lb-count" id="lbCount"></span>
+        <button type="button" data-lb="next" aria-label="Siguiente">›</button>
+        <button type="button" data-lb="out" aria-label="Alejar">−</button>
+        <button type="button" data-lb="in" aria-label="Acercar">+</button>
+        <button type="button" data-lb="reset" aria-label="Ajustar a pantalla">Ajustar</button>
+        <a id="lbOpen" target="_blank" rel="noopener">Abrir original</a>
+        <button type="button" data-lb="close" class="lb-close" aria-label="Cerrar">✕</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lbStage"><img id="lbImg" alt="" draggable="false"></div>
+  </div>
+
+  <noscript><p style="padding:2rem">Este sitio necesita JavaScript habilitado.</p></noscript>
+  <script src="data/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
